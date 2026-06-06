@@ -35,7 +35,7 @@ HAL_StatusTypeDef dac6551_write_code(dac6551_t *d, uint16_t code)
 
 HAL_StatusTypeDef dac6551_set_mv(dac6551_t *d, uint32_t mv)
 {
-	uint16_t code = (mv * 4096) / d->vref_mv;
+	uint16_t code = (mv * 4095) / (d->vref_mv);
 
 	return dac6551_write_code(d, code);
 
