@@ -1,0 +1,3 @@
+../Core/Src/cli_io.c:12:19:prvUARTGetChar	16	static
+../Core/Src/cli_io.c:17:13:UARTWrite	16	static
+../Core/Src/cli_io.c:19:6:vCliTask	32	static

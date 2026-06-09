@@ -1,0 +1,5 @@
+../Core/Src/dac6551.c:4:20:cs_low	1
+../Core/Src/dac6551.c:5:20:cs_high	1
+../Core/Src/dac6551.c:8:6:dac6551_init	1
+../Core/Src/dac6551.c:14:19:dac6551_write_code	1
+../Core/Src/dac6551.c:36:19:dac6551_set_mv	1

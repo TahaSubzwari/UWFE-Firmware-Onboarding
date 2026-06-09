@@ -1,6 +1,7 @@
 // dac_cli.c
 #include "FreeRTOS_CLI.h"
 #include "dac6551.h"
+#include <stdio.h>
 extern dac6551_t g_dac;
 
 static BaseType_t cmdDacSet_mV(char *writeBuf, size_t writeLen, const char *cmdStr)
@@ -22,7 +23,7 @@ static BaseType_t cmdDacSet_mV(char *writeBuf, size_t writeLen, const char *cmdS
 static BaseType_t cmdDacRaw(char *writeBuf, size_t writeLen, const char *cmdStr)
 {
     // Usage: dacRaw <code0..4095>
-    unsigned code=0,
+    unsigned code=0;
     int n = sscanf(cmdStr, "dacRaw %u", &code);
     if (n < 1 || code>4095) {
         snprintf(writeBuf, writeLen, "Usage: dac <0..4095>");

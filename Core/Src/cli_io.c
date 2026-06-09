@@ -3,6 +3,7 @@
 #include "task.h"
 #include "FreeRTOS_CLI.h"
 #include "usart.h" // Cube HAL for chosen UART
+#include <string.h>
 
 static char rx_line[64];
 static char tx_buf[128];

@@ -33,6 +33,8 @@
 #endif
 /* *INDENT-ON* */
 
+#include "FreeRTOS.h"
+
 /* The prototype to which callback functions used to process command line
  * commands must comply.  pcWriteBuffer is a buffer into which the output from
  * executing the command can be written, xWriteBufferLen is the length, in bytes of

@@ -1,0 +1,3 @@
+../Core/Src/cli_io.c:12:19:prvUARTGetChar	2
+../Core/Src/cli_io.c:17:13:UARTWrite	1
+../Core/Src/cli_io.c:19:6:vCliTask	9
